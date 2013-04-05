@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Такси Харьков</title>
+		<link rel="stylesheet" href="js/jquery.mobile-1.3.0.min.css" />
+		<link rel="stylesheet" href="themes/mtaxi.min.css" />
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.3.0.min.js"></script>
+		<script type="text/javascript" src="js/jsrender.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+	<body>
+		<!-- general header -->
+		<script id="header-tmpl" type="text/x-jsrender">
+				<a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Назад</a> 
+        		<img style="width: 172px; height: 26px; margin-top:5px; margin-left: 100px" src="images/logo_ukr.gif" />				  
+		</script>
+	    <!-- Home -->
+        <div data-role="page" id="mainpage" data-theme="a">
+        	<div data-role="header" data-add-back-btn="true" data-theme="a">
+        		<h1>mTaxi Харьков</h1>
+        	</div>                
+            <div data-role="content">
+            	<br /><br />
+                <ul data-role="listview" data-inset="false">
+		            <li data-role="list-divider" role="heading">
+		                Параметры поездки
+		            </li>
+		            <li>
+		                <a href="#selector-address-start" data-transition="slide">
+		                    Откуда
+		                    <span class="ui-li-count">
+		                        пр. 50 лет ВЛКСМ, 65
+		                    </span>
+		                </a>
+		            </li>
+		            <li>
+		                <a href="#selector-address-finish" data-transition="slide">
+		                    Куда
+		                    <span class="ui-li-count">
+		                        ул. Отакара Яроша, 17-Б
+		                    </span>
+		                </a>
+		            </li>
+		            <li>
+		                <a href="#selector-time" data-transition="slide">
+		                    Время
+		                </a>
+		                <span class="ui-li-count">
+		                        на сейчас
+						</span>
+		            </li>
+		        </ul>
+		        <br /><br />
+		        <a data-role="button" data-transition="flip" href="#calculate" data-icon="arrow-r" data-iconpos="left"  data-theme="b" >
+            		Показать стоимость
+        		</a>
+		        
+            </div>
+            
+            <div data-role="footer" data-theme="a"  data-position="fixed">
+        		<div data-role="navbar" data-iconpos="top">
+		            <ul>
+		                <li>
+		                    <a href="#settings" data-transition="slideup" data-icon="gear">
+		                        Настройки
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#tariffs" data-transition="slideup" data-theme="" data-icon="grid">
+		                        Тарифы
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#help" data-transition="fade" data-theme="" data-icon="info">
+		                        Помощь
+		                    </a>
+		                </li>
+		            </ul>
+		        </div>
+        	</div>
+        </div>
+        		
+		<div data-role="page" id="infopage"  data-theme="b">
+        	<div data-role="header" data-add-back-btn="true" data-theme="b" class="redline">
+        		 <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Назад</a>
+  
+			</div>
+            <div data-role="content" id="content">
+				<h3>mTaxi Харьков</h3>
+								
+				<p>Мобильное приложение разработано в 2013 году.</p>
+				<p>Разработчик: Олег Копачовец [<a href="mailto:copeus@gmail.com">copeus@gmail.com</a>]</p>
+				
+				<p>&copy; 2013 Олег Копачовец</p>			            	
+            </div>
+        </div>
+        
+
+		
+	</body>
+</html>
