@@ -718,6 +718,10 @@ a.ui-link-inherit {
 }
 			
 			
+
+			
+			
+			
     /* disable shadows for better android performance */
     .ui-body-a,
     .ui-bar-a,
@@ -761,3 +765,19 @@ a.ui-link-inherit {
         -moz-box-shadow: none !important;
         -webkit-box-shadow: none !important;
     }
+
+
+
+
+p.totalprice
+{
+	text-align:center;
+	font-size: 1.8em;
+}
+
+p.totalprice span {
+	font-size: 2.2em;
+	font-style: bold;
+	margin-right: 0.2em;
+}
+
