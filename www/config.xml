@@ -3,14 +3,14 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id = "com.mTaxiKharkiv"
         version = "0.1.0">
-    <name>Такси Харьков</name>
+    <name>Таxi app</name>
 
     <description>
-        mTaxi Харьков - мобильное приложения для вызова такси в Харькове
+        Taxi app - een mobiele applicatie voor call taxi in Den Haag
     </description>
 
-    <author href="http://proverstka.com" email="copeus@gmail.com">
-        Oleg Kopachovets
+    <author href="http://webyoub.tk" email="finfrans@gmail.com">
+       Webyoub
     </author>
 
     <feature name="http://api.phonegap.com/1.0/device" />
