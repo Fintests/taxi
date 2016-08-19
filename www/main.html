@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Такси Харьков</title>
+		<title>Таxi den Haag</title>
 		<link rel="stylesheet" href="js/jquery.mobile-1.3.0.min.css" />
 		<link rel="stylesheet" href="themes/mtaxi.min.css" />
 		<link rel="stylesheet" href="themes/jqm-datebox.min.css" />
@@ -24,25 +24,25 @@
 	<body>
 		<!-- general header -->
 		<script id="header-tmpl" type="text/x-jsrender">
-				<a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Назад</a> 
+				<a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Terug</a> 
         		<img style="width: 172px; height: 26px; margin-top:5px; margin-left: 100px" src="images/logo_ukr.gif" />				  
 		</script>
 	    <!-- Home -->
         <div data-role="page" id="mainpage" data-theme="a">
         	<div data-role="header" data-add-back-btn="true" data-theme="a">
-        		<h1>mTaxi Харьков</h1>
+        		<h1>Taxi Den Haag</h1>
         	</div>                
             <div data-role="content">
             	<br /><br />
                 <ul data-role="listview" data-inset="false">
 		            <li data-role="list-divider" role="heading">
-		                Параметры поездки
+		                Rit instellingen
 		            </li>
 		            <li>
 		                <a href="#selector-address-start" data-transition="slide">
-		                    Откуда
+		                    vanaf
 		                    <span class="ui-li-count">
-		                        пр. 50 лет ВЛКСМ, 65
+		                        Straat1
 		                    </span>
 		                </a>
 		            </li>
@@ -50,22 +50,22 @@
 		                <a href="#selector-address-finish" data-transition="slide">
 		                    Куда
 		                    <span class="ui-li-count">
-		                        ул. Отакара Яроша, 17-Б
+		                        straat 2
 		                    </span>
 		                </a>
 		            </li>
 		            <li>
 		                <a href="#selector-time" data-transition="slide">
-		                    Время
+		                    Tijd
 		                </a>
 		                <span class="ui-li-count">
-		                        на сейчас
+		                        Vanaf nu
 						</span>
 		            </li>
 		        </ul>
 		        <br /><br />
 		        <a data-role="button" data-transition="flip" href="#calculate" data-icon="arrow-r" data-iconpos="left"  data-theme="b" >
-            		Показать стоимость
+            		Toon Prijs
         		</a>
 		        
             </div>
@@ -75,17 +75,17 @@
 		            <ul>
 		                <li>
 		                    <a href="#settings" data-transition="slideup" data-icon="gear">
-		                        Настройки
+		                        Instellingen
 		                    </a>
 		                </li>
 		                <li>
 		                    <a href="#tariffspage" data-transition="slideup" data-theme="" data-icon="grid">
-		                        Тарифы
+		                        Тarieven
 		                    </a>
 		                </li>
 		                <li>
 		                    <a href="#infopage" data-transition="slideup" data-theme="" data-icon="info">
-		                        Помощь
+		                        Hulp
 		                    </a>
 		                </li>
 		            </ul>
@@ -95,35 +95,35 @@
         
         <div data-role="page" id="selector-address-start"  data-theme="a">
         	<div data-role="header" data-add-back-btn="true" data-theme="b" >
-				<a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Назад</a>
-				<h1>Выбор адреса</h1>
+				<a href="#" data-role="button" data-rel="back" data-icon="arrow-l">terug</a>
+				<h1>Adres</h1>
 			</div>
             <div data-role="content">
-				<ul id="street-autocomplete" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Введите улицу..." data-filter-theme="b">
-					<li data-theme="b"><a href="#">Определить местоположение...</a></li>
-					<li data-theme="a"><a href="#">ул. Карла Маркса, 25</a></li>
-					<li data-theme="a"><a href="#">ул. Челюскинцев, 37</a></li>
-					<li data-theme="a"><a href="#">пр. 30 Красного Октября и Ленина, 65</a></li>
-					<li data-theme="a"><a href="#">пер. Ботаников, 22А</a></li>
+				<ul id="street-autocomplete" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Voer straat in..." data-filter-theme="b">
+					<li data-theme="b"><a href="#">Plaatsen...</a></li>
+					<li data-theme="a"><a href="#">Straat 1</a></li>
+					<li data-theme="a"><a href="#">Straat 2</a></li>
+					<li data-theme="a"><a href="#">Straat 3</a></li>
+					<li data-theme="a"><a href="#">Straat 4</a></li>
 				</ul>
             </div>
         </div>   
              
         <div data-role="page" id="selector-time"  data-theme="a">
         	<div data-role="header" data-add-back-btn="true" data-theme="b" >
-				<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-theme="a" >Назад</a>
-				<h1>Выбор времени</h1>
+				<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-theme="a" >terug</a>
+				<h1>Tijd</h1>
 			</div>
             <div data-role="content">
 				<a data-role="button" data-transition="flip" href="#setup-time-now" data-icon="arrow-r" data-iconpos="left"  data-theme="b" >
-            		На сейчас
+            		NU
         		</a>
         		<p></p>
         		<p></p>
-        		<p>Вы можете так же задать конкретное время подачи такси, сделав заказ заранее</p>
+        		<p>U kunt ook een specifiek moment van het indienen van een taxi te geven , waardoor vooraf reserveren</p>
 				<input readonly="readonly" name="timepicker" id="timepicker" data-role="datebox" data-options='{"mode": "slidebox", "overrideDateFormat":"%d.%m.%Y %H:%M", "overrideTimeFormat":24, "overrideSlideFieldOrder":["d","h","i"]}' type="text">
 				<a data-role="button" data-transition="flip" href="#setup-time" data-icon="arrow-r" data-iconpos="left"  data-theme="a" >
-            		Выбрать
+            		Kiezen
         		</a>
 			</div>
         </div>   
@@ -131,18 +131,18 @@
         
 		<div data-role="page" id="phonesetuppage"  data-theme="b">
         	<div data-role="header" data-add-back-btn="true" data-theme="b" >
-				<h1>Номер телефона</h1>
+				<h1>Telefoonnummer</h1>
 			</div>
             <div data-role="content">
 							
-				<p>Пожалуйста, введите номер Вашего мобильного телефона, для того, чтобы при необходимости водитель или оператор службы такси смогли с вами связаться</p>
+				<p>Vul hier uw mobiele telefoonnummer aan de chauffeur of de exploitant van een taxi service kan , indien nodig , contact met u opnemen</p>
 				<input type="text" name="phone-number" id="phone-number" value="380-" size="20">
                 <script type="text/javascript">
                     $("#phone-number").mask("099-999-99-99");
                 </script>
-            	<em>Например: 063-123-22-33</em>
+            	<em>Voorbeeld: 06-227-461-69</em>
             	
-            	<p>При необходимости, вы сможете поменять свой номер телефона в настройках программы</p>
+            	<p>Indien nodig, kunt u uw telefoonnummer veranderen in de programma-instellingen</p>
             	
             	<a data-role="button" data-transition="flip" href="#calculate" data-icon="arrow-r" data-iconpos="right"  data-theme="b" class="savebutton">
             		Сохранить
@@ -152,28 +152,28 @@
 
 		<div data-role="page" id="infopage"  data-theme="b">
         	<div data-role="header" data-add-back-btn="true" data-theme="b">
-        		<a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Назад</a>
-  				<h1>О программе</h1>
+        		<a href="#" data-role="button" data-rel="back" data-icon="arrow-l">terug</a>
+  				<h1>О programma</h1>
 			</div>
             <div data-role="content">
-				<h3>О приложении</h3>
+				<h3>О toepassing</h3>
 								
-				<p>Мобильное приложение разработано в 2013 году.</p>
-				<p>Разработчик: Олег Копачовец [<a href="mailto:copeus@gmail.com">copeus@gmail.com</a>]</p>
+				<p>Deze taxi applicatie ontwikkeld in 2016.p>
+				<p>Ontwikkelaar [<a href="mailto:finfrans@gmail.com">finfrans@gmail.com</a>]</p>
 				
-				<p>&copy; 2013 Олег Копачовец</p>			            	
+				<p>&copy; 2016 applicatie</p>			            	
             </div>
         </div>
         
        <div data-role="page" id="tariffspage"  data-theme="b">
         	<div data-role="header" data-add-back-btn="true" data-theme="b" data-back-btn-text="previous">
-  				<a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Назад</a>
-  				<h1>Тарифы</h1>
+  				<a href="#" data-role="button" data-rel="back" data-icon="arrow-l">terug</a>
+  				<h1>Тarieven</h1>
 			</div>
             <div data-role="content">
-				<h3>Калькулятор поездки</h3>
+				<h3>Rit calculator</h3>
 				<p></p>
-				<label for="slider-fill">Количество километров</label>
+				<label for="slider-fill">aantal Kilometers</label>
 				<input type="range" name="distance" value="5" min="1" max="30"/  data-highlight="true" data-theme="a" >
 				<p class="totalprice"><span>25</span>₴</p>				
 				
