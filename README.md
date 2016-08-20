@@ -1,4 +1,4 @@
-mTaxi-Kharkiv
+Taxi app 
 =============
 
-mTaxi - mobile app for booking taxi in Kharkiv UA by Phonegap technology
+taxi - mobile app for booking taxi Phonegap technology
